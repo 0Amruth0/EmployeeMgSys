@@ -36,10 +36,10 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_AMBITIOUS_RIVER_031E5600F }}
           action: upload
-          skip_app_build: true  # This tells Azure to skip its own build
-          app_location: "./frontend"
+          skip_app_build: true
+          app_location: "./frontend/dist/Costic"  # Changed: Point to built files
           api_location: "/EmployeeManagementSystem"
-          output_location: "dist/Costic"
+          output_location: ""  # Changed: Empty since we're already pointing to built files
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
