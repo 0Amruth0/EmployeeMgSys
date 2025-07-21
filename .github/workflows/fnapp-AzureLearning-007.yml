@@ -1,40 +1,39 @@
-name: Deploy Azure Function App using Publish Profile
+name: 🚀 Deploy Azure Function App
 
 on:
   push:
     branches:
-      - master
+      - master  # or your deployment branch
 
 env:
   AZURE_FUNCTIONAPP_NAME: fnapp-AzureLearning-007
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: AzureFunctions/published
-  CONFIGURATION: Release
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: '.'
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📦 Checkout code
-        uses: actions/checkout@v4
+    - name: ⬇️ Checkout code
+      uses: actions/checkout@v4
 
-      - name: 🧰 Setup .NET SDK
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '8.0.x'
+    - name: ⚙️ Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
 
-      - name: 🔄 Restore dependencies
-        run: dotnet restore ./AzureFunctions
+    - name: 🛠️ Restore dependencies
+      run: dotnet restore ./AzureFunctions/EmployeeFunctionApp.csproj
 
-      - name: 🛠 Build
-        run: dotnet build ./AzureFunctions --configuration ${{ env.CONFIGURATION }} --no-restore
+    - name: 🏗️ Build
+      run: dotnet build --configuration Release ./AzureFunctions/EmployeeFunctionApp.csproj
 
-      - name: 📤 Publish
-        run: dotnet publish ./AzureFunctions --configuration ${{ env.CONFIGURATION }} --output ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+    - name: 📦 Publish
+      run: dotnet publish ./AzureFunctions/EmployeeFunctionApp.csproj -c Release -o publish_output
 
-      - name: 🚀 Deploy to Azure using Publish Profile
-        uses: Azure/functions-action@v1
-        with:
-          app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
-          package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+    - name: 🚀 Deploy to Azure Function App via Zip Deploy
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+        package: publish_output
