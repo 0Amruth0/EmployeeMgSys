@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36221.1 d17.14
+VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagementSystem", "EmployeeManagementSystem\EmployeeManagementSystem.csproj", "{CE5B5B58-3CAD-4283-8F30-1FA839F0083A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{CF357B34-37DA-4014-BDF3-847991C4DED5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CE5B5B58-3CAD-4283-8F30-1FA839F0083A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE5B5B58-3CAD-4283-8F30-1FA839F0083A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE5B5B58-3CAD-4283-8F30-1FA839F0083A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF357B34-37DA-4014-BDF3-847991C4DED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF357B34-37DA-4014-BDF3-847991C4DED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF357B34-37DA-4014-BDF3-847991C4DED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF357B34-37DA-4014-BDF3-847991C4DED5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
