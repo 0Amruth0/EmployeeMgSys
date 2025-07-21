@@ -7,8 +7,7 @@ import { Employee } from '../models/employee.model'; // ✅ make sure this is th
 
 @Injectable({ providedIn: 'root' })
 export class EmployeeService {
-  private baseUrl = 'https://webapp-azurelearning-003.azurewebsites.net/api/Employees';
-
+  private baseUrl = 'https://fnapp-azurelearning-007.azurewebsites.net/api/employees?code=1nSGbicahIr59_G0hZ-gTrtwurIYLMfaCMSFwhl11JcsAzFuskquGg==';
   constructor(private http: HttpClient) {}
 
   getEmployees(): Observable<Employee[]> {

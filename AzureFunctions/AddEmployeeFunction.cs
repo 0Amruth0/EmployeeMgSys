@@ -1,13 +1,12 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
-using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 using System.Text;
 
 public static class AddEmployeeFunction
 {
-    [FunctionName("AddEmployee")]
+    [Function("AddEmployee")]
     public static async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "employees")] HttpRequest req,
         ILogger log)
