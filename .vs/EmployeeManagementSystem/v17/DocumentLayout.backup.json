@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{CF357B34-37DA-4014-BDF3-847991C4DED5}|AzureFunctions\\AzureFunctions.csproj|solutionrelative:azurefunctions\\addemployeefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CF357B34-37DA-4014-BDF3-847991C4DED5}|AzureFunctions\\AzureFunctions.csproj|c:\\users\\amruthganeshjm\\downloads\\prepare\\employeemgsys\\azurefunctions\\host.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF357B34-37DA-4014-BDF3-847991C4DED5}|AzureFunctions\\AzureFunctions.csproj|solutionrelative:azurefunctions\\host.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF357B34-37DA-4014-BDF3-847991C4DED5}|AzureFunctions\\AzureFunctions.csproj|c:\\users\\amruthganeshjm\\downloads\\prepare\\employeemgsys\\azurefunctions\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF357B34-37DA-4014-BDF3-847991C4DED5}|AzureFunctions\\AzureFunctions.csproj|solutionrelative:azurefunctions\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF357B34-37DA-4014-BDF3-847991C4DED5}|AzureFunctions\\AzureFunctions.csproj|c:\\users\\amruthganeshjm\\downloads\\prepare\\employeemgsys\\azurefunctions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF357B34-37DA-4014-BDF3-847991C4DED5}|AzureFunctions\\AzureFunctions.csproj|solutionrelative:azurefunctions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CF357B34-37DA-4014-BDF3-847991C4DED5}|AzureFunctions\\AzureFunctions.csproj|c:\\users\\amruthganeshjm\\downloads\\prepare\\employeemgsys\\azurefunctions\\getemployeesfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF357B34-37DA-4014-BDF3-847991C4DED5}|AzureFunctions\\AzureFunctions.csproj|solutionrelative:azurefunctions\\getemployeesfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,20 +42,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\AzureFunctions\\Program.cs",
+              "RelativeDocumentMoniker": "AzureFunctions\\Program.cs",
+              "ToolTip": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\AzureFunctions\\Program.cs",
+              "RelativeToolTip": "AzureFunctions\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T10:28:12.984Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AzureFunctions",
+              "Title": "local.settings.json",
+              "DocumentMoniker": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\AzureFunctions\\local.settings.json",
+              "RelativeDocumentMoniker": "AzureFunctions\\local.settings.json",
+              "ToolTip": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\AzureFunctions\\local.settings.json",
+              "RelativeToolTip": "AzureFunctions\\local.settings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-21T10:28:08.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "host.json",
+              "DocumentMoniker": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\AzureFunctions\\host.json",
+              "RelativeDocumentMoniker": "AzureFunctions\\host.json",
+              "ToolTip": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\AzureFunctions\\host.json",
+              "RelativeToolTip": "AzureFunctions\\host.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-21T09:56:44.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AzureFunctions.csproj",
               "DocumentMoniker": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\AzureFunctions\\AzureFunctions.csproj",
               "RelativeDocumentMoniker": "AzureFunctions\\AzureFunctions.csproj",
               "ToolTip": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\AzureFunctions\\AzureFunctions.csproj",
               "RelativeToolTip": "AzureFunctions\\AzureFunctions.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-21T09:44:36.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-21T09:44:36.483Z"
             },
             {
               "$type": "Document",
@@ -53,27 +101,26 @@
               "RelativeDocumentMoniker": "AzureFunctions\\AddEmployeeFunction.cs",
               "ToolTip": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\AzureFunctions\\AddEmployeeFunction.cs",
               "RelativeToolTip": "AzureFunctions\\AddEmployeeFunction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-21T09:44:53.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "GetEmployeesFunction.cs",
               "DocumentMoniker": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\AzureFunctions\\GetEmployeesFunction.cs",
               "RelativeDocumentMoniker": "AzureFunctions\\GetEmployeesFunction.cs",
               "ToolTip": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\AzureFunctions\\GetEmployeesFunction.cs",
               "RelativeToolTip": "AzureFunctions\\GetEmployeesFunction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T09:43:51.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-21T09:43:51.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\EmployeeManagementSystem\\appsettings.json",
               "RelativeDocumentMoniker": "EmployeeManagementSystem\\appsettings.json",
@@ -85,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\EmployeeManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "EmployeeManagementSystem\\Program.cs",
@@ -93,8 +140,7 @@
               "RelativeToolTip": "EmployeeManagementSystem\\Program.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAC4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T05:33:02.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T05:33:02.088Z"
             }
           ]
         }
