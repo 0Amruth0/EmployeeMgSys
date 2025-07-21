@@ -29,7 +29,7 @@ jobs:
       run: dotnet build --configuration Release ./AzureFunctions/AzureFunctions.csproj
 
     - name: 📦 Publish
-      run: dotnet publish ./AzureFunctions/EmployeeFunctionApp.csproj -c Release -o publish_output
+      run: dotnet publish ./AzureFunctions/AzureFunctions.csproj -c Release -o publish_output
 
     - name: 🚀 Deploy to Azure Function App via Zip Deploy
       uses: azure/webapps-deploy@v2
