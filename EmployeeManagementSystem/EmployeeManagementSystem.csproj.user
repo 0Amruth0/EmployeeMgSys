@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ActiveDebugProfile>https</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>C:\Users\AmruthGaneshJM\Downloads\prepare\EmployeeMgSys\.github\workflows\master_webapp-azurelearning-003.yml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\AmruthGaneshJM\Downloads\prepare\EmployeeMgSys\EmployeeManagementSystem\Properties\PublishProfiles\webapp-AzureLearning-003 - Zip Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

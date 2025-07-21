@@ -17,7 +17,7 @@ public class GetEmployeesFunction
     [Function("GetEmployees")]
     public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "employees")] HttpRequestData req)
     {
-        var response = await _client.GetAsync("https://webapp-azurelearning-003.azurewebsites.net/api/employees");
+        var response = await _client.GetAsync("https://webapp-azurelearning-003.azurewebsites.net/api/Employees");
         var content = await response.Content.ReadAsStringAsync();
 
         var res = req.CreateResponse(response.StatusCode);

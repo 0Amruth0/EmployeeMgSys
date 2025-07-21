@@ -20,7 +20,7 @@ public class AddEmployeeFunction
     {
         var requestBody = await new StreamReader(req.Body).ReadToEndAsync();
         var response = await _client.PostAsync(
-            "https://webapp-azurelearning-003.azurewebsites.net/api/employees",
+            "https://webapp-azurelearning-003.azurewebsites.net/api/Employees",
             new StringContent(requestBody, Encoding.UTF8, "application/json")
         );
 
