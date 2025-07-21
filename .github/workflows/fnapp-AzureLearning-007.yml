@@ -26,7 +26,7 @@ jobs:
       run: dotnet restore ./AzureFunctions/EmployeeFunctionApp.csproj
 
     - name: 🏗️ Build
-      run: dotnet build --configuration Release ./AzureFunctions/EmployeeFunctionApp.csproj
+      run: dotnet build --configuration Release ./AzureFunctions/AzureFunctions.csproj
 
     - name: 📦 Publish
       run: dotnet publish ./AzureFunctions/EmployeeFunctionApp.csproj -c Release -o publish_output
