@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {}
+    "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {
+    "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
         "projectName": "EmployeeManagementSystem",
-        "projectPath": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeManagementSystem\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
+        "projectPath": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\EmployeeManagementSystem\\EmployeeManagementSystem.csproj",
         "packagesPath": "C:\\Users\\AmruthGaneshJM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeManagementSystem\\EmployeeManagementSystem\\obj\\",
+        "outputPath": "C:\\Users\\AmruthGaneshJM\\Downloads\\prepare\\EmployeeMgSys\\EmployeeManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
