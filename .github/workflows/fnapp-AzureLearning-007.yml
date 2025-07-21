@@ -23,7 +23,7 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: 🛠️ Restore dependencies
-      run: dotnet restore ./AzureFunctions/EmployeeFunctionApp.csproj
+      run: dotnet restore ./AzureFunctions/AzureFunctions.csproj
 
     - name: 🏗️ Build
       run: dotnet build --configuration Release ./AzureFunctions/AzureFunctions.csproj
