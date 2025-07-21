@@ -14,4 +14,8 @@ export class EmployeeService {
   getEmployees(): Observable<Employee[]> {
     return this.http.get<Employee[]>(this.baseUrl); // ✅ returns correct model type
   }
+  addEmployee(employee: Employee): Observable<any> {
+    return this.http.post(this.baseUrl, employee);
+  }
+
 }

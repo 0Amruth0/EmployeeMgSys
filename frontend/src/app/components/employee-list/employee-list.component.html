@@ -1,6 +1,27 @@
-<h2>Employee List</h2>
-<ul>
-  <li *ngFor="let emp of employees">
-    {{ emp.firstName }} {{ emp.lastName }}
-  </li>
-</ul>
+<div class="container">
+
+  <h2>Add Employee</h2>
+  <form (ngSubmit)="addEmployee()">
+    <input type="text" placeholder="First Name" [(ngModel)]="newEmployee.firstName" name="firstName" required>
+    <input type="text" placeholder="Last Name" [(ngModel)]="newEmployee.lastName" name="lastName" required>
+    <input type="email" placeholder="Email" [(ngModel)]="newEmployee.email" name="email" required>
+    <input type="text" placeholder="Department" [(ngModel)]="newEmployee.department" name="department" required>
+    <input type="text" placeholder="Position" [(ngModel)]="newEmployee.position" name="position" required>
+    <input type="number" placeholder="Salary" [(ngModel)]="newEmployee.salary" name="salary" required>
+    <input type="date" [(ngModel)]="newEmployee.hireDate" name="hireDate" required>
+    
+    <button type="submit">Add Employee</button>
+  </form>
+
+  <p>{{ message }}</p>
+
+  <h2>Employee List</h2>
+  <button (click)="fetchEmployees()">Fetch Employees</button>
+
+  <ul *ngIf="showList">
+    <li *ngFor="let emp of employees">
+      {{ emp.firstName }} {{ emp.lastName }} - {{ emp.email }} - ₹{{ emp.salary }} - {{ emp.department }}
+    </li>
+  </ul>
+
+</div>
