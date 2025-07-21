@@ -1,27 +1,50 @@
 <div class="container">
+  <div class="side-by-side">
+    <!-- LEFT: Form Section -->
+    <div class="form-section">
+      <h2>Add Employee</h2>
+      <form (ngSubmit)="addEmployee()">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="newEmployee.firstName" required>
 
-  <h2>Add Employee</h2>
-  <form (ngSubmit)="addEmployee()">
-    <input type="text" placeholder="First Name" [(ngModel)]="newEmployee.firstName" name="firstName" required>
-    <input type="text" placeholder="Last Name" [(ngModel)]="newEmployee.lastName" name="lastName" required>
-    <input type="email" placeholder="Email" [(ngModel)]="newEmployee.email" name="email" required>
-    <input type="text" placeholder="Department" [(ngModel)]="newEmployee.department" name="department" required>
-    <input type="text" placeholder="Position" [(ngModel)]="newEmployee.position" name="position" required>
-    <input type="number" placeholder="Salary" [(ngModel)]="newEmployee.salary" name="salary" required>
-    <input type="date" [(ngModel)]="newEmployee.hireDate" name="hireDate" required>
-    
-    <button type="submit">Add Employee</button>
-  </form>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="newEmployee.lastName" required>
 
-  <p>{{ message }}</p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" [(ngModel)]="newEmployee.email" required>
 
-  <h2>Employee List</h2>
-  <button (click)="fetchEmployees()">Fetch Employees</button>
+        <label for="department">Department</label>
+        <input type="text" id="department" name="department" [(ngModel)]="newEmployee.department" required>
 
-  <ul *ngIf="showList">
-    <li *ngFor="let emp of employees">
-      {{ emp.firstName }} {{ emp.lastName }} - {{ emp.email }} - ₹{{ emp.salary }} - {{ emp.department }}
-    </li>
-  </ul>
+        <label for="position">Position</label>
+        <input type="text" id="position" name="position" [(ngModel)]="newEmployee.position" required>
 
+        <label for="salary">Salary</label>
+        <input type="number" id="salary" name="salary" [(ngModel)]="newEmployee.salary" required>
+
+        <label for="hireDate">Hire Date</label>
+        <input type="date" id="hireDate" name="hireDate" [(ngModel)]="newEmployee.hireDate" required>
+
+        <button type="submit">Add Employee</button>
+      </form>
+
+      <p class="message">{{ message }}</p>
+      <button class="fetch-btn" (click)="fetchEmployees()">Fetch Employees</button>
+    </div>
+
+    <!-- RIGHT: Employee List -->
+    <div class="employee-section" *ngIf="showList">
+      <h2>Employee List</h2>
+      <div class="employee-list">
+        <div class="employee-card" *ngFor="let emp of employees">
+          <h3>{{ emp.firstName }} {{ emp.lastName }}</h3>
+          <p><strong>Email:</strong> {{ emp.email }}</p>
+          <p><strong>Department:</strong> {{ emp.department }}</p>
+          <p><strong>Position:</strong> {{ emp.position }}</p>
+          <p><strong>Salary:</strong> ₹{{ emp.salary | number }}</p>
+          <p><strong>Hire Date:</strong> {{ emp.hireDate | date }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

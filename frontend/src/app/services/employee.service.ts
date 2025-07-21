@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Employee } from '../models/employee.model'; // ✅ make sure this is the one and only model
 
-@Injectable({ providedIn: 'any' })
+@Injectable({ providedIn: 'root' })
 export class EmployeeService {
   private baseUrl = 'https://webapp-azurelearning-003.azurewebsites.net/api/Employees';
 
