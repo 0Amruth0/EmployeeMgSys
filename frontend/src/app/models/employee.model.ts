@@ -8,6 +8,7 @@ export interface Employee {
   salary: number;
   hireDate: Date;
   isActive: boolean;
-  createdAt: Date;
-  updatedAt: Date;
+  fullName: string;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
