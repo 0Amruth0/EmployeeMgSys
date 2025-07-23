@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { EmployeeService } from '../../services/employee.service';
-import { Employee } from '../../models/employee.model';
+import { Employee, EmployeePost } from '../../models/employee.model';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -15,7 +15,7 @@ export class EmployeeListComponent {
   employees: Employee[] = [];
   showList = false;
 
-  newEmployee: Employee = {
+  newEmployee: EmployeePost = {
     id: 0,
     firstName: '',
     lastName: '',
@@ -23,10 +23,7 @@ export class EmployeeListComponent {
     department: '',
     position: '',
     salary: 0,
-    hireDate: new Date(),
-    isActive: true,
-    createdAt: new Date(),
-    updatedAt: new Date()
+    hireDate: new Date()
   };
 
   message: string = '';
@@ -47,12 +44,13 @@ export class EmployeeListComponent {
   }
 
   addEmployee(): void {
-    this.newEmployee.createdAt = new Date();
-    this.newEmployee.updatedAt = new Date();
-    this.newEmployee.isActive = true;
+    // this.newEmployee.createdAt = new Date();
+    // this.newEmployee.updatedAt = new Date();
+    // this.newEmployee.isActive = true;
 
     this.employeeService.addEmployee(this.newEmployee).subscribe({
       next: () => {
+        console.log(this.newEmployee);
         this.message = 'Employee added successfully!';
         this.resetForm();
       },
@@ -72,9 +70,6 @@ export class EmployeeListComponent {
       position: '',
       salary: 0,
       hireDate: new Date(),
-      isActive: true,
-      createdAt: new Date(),
-      updatedAt: new Date()
     };
   }
 }

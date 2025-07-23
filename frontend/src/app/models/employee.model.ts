@@ -12,3 +12,14 @@ export interface Employee {
   createdAt?: Date;
   updatedAt?: Date;
 }
+
+export interface EmployeePost {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  department: string;
+  position: string;
+  salary: number;
+  hireDate: Date;
+}

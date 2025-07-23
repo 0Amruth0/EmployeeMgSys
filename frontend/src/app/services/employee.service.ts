@@ -2,8 +2,8 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { Employee } from '../models/employee.model'; // ✅ make sure this is the one and only model
+import { map, Observable } from 'rxjs';
+import { Employee, EmployeePost } from '../models/employee.model'; // ✅ make sure this is the one and only model
 
 @Injectable({ providedIn: 'root' })
 export class EmployeeService {
@@ -11,9 +11,11 @@ export class EmployeeService {
   constructor(private http: HttpClient) {}
 
   getEmployees(): Observable<Employee[]> {
-    return this.http.get<Employee[]>(this.baseUrl); // ✅ returns correct model type
+    return this.http.get<any>(this.baseUrl).pipe(
+      map( response => response.Value as Employee[])
+    );
   }
-  addEmployee(employee: Employee): Observable<any> {
+  addEmployee(employee: EmployeePost): Observable<any> {
     return this.http.post(this.baseUrl, employee);
   }
 
